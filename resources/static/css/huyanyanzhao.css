@@ -1,0 +1,372 @@
+/* default*/
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: '微软雅黑';
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+    color: #95C7D2;
+}
+
+a:active {
+    color: #4682B4;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.topMain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+    background-color: #d23933;
+}
+
+.topLeft {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    /*align-items: flex-start;*/
+    /*justify-content: flex-start;*/
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3rem;
+}
+
+.topLeft > span {
+    color: white;
+    /*margin-top: 5vh;*/
+    /*margin-left: 5vh;*/
+    /*margin-top: 3vw;*/
+    margin-left: 3vw;
+}
+
+.topRight {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+
+.topRight > a {
+    color: white;
+    margin-right: 3vw;
+}
+
+.topRight > img {
+    /*margin-right: 4em;*/
+    margin-right: 3vw;
+    height: 5rem;
+    width: 5rem
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.mainItemTitle {
+    display: flex;
+    width: 100%;
+    height: 7em;
+    flex-direction: column;
+}
+
+.mainItemTitle > span {
+    font-size: 2.5em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.mainItemTitle > div {
+    width: 13em;
+    height: 0.3em;
+    background-color: black;
+    margin-left: 1em;
+    margin-top: 1em
+}
+
+.mainItemContent {
+    display: flex;
+}
+
+.mainItemProduct {
+    width: 100%;
+    height: auto;
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainItemProduct div img {
+    width: 28em;
+    height: 21em;
+}
+
+.mainItemContain {
+    width: 100%;
+    height: 76vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mainItemContain .containTitle {
+    font-size: 4em;
+    width: 100%;
+    /*margin-top: 3em;*/
+}
+
+.mainItemContain .containTitle span {
+    margin-left: 2em;
+}
+
+.mainItemContain .containLine {
+    width: 100%;
+    background-color: black;
+    height: 1em;
+}
+
+.mainItemContainList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70em;
+    width: 100%;
+}
+
+.mainItemContainList .containTop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40em;
+}
+
+.mainItemContainList .containItem {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.mainItemContainList .containItem span {
+    font-size: 2em;
+    margin-top: 1em
+}
+
+.mainItemContainList .containItem span:nth-child(1) {
+    font-size: 3em;
+    margin-top: 2em;
+}
+
+.mainItemContainList .containFoot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10em;
+    font-size: 3em;
+}
+.containFoot{
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #d23933;
+    margin-top: 27em;
+}
+
+.footer > span {
+    color: white;
+}
+
+/*mobile*/
+@media (max-width: 800px) {
+    /*小于800px时加载移动端样式*/
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .topLeft {
+        width: 58%;
+        font-size: 1.5rem;
+    }
+
+    .topRight > img {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    .mainContainer {
+        display: block;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 130vw;
+        overflow: scroll;
+    }
+
+    .mainItemTitle {
+        display: flex;
+        width: 100%;
+        height: 10vw;
+        line-height: 10vw;
+        margin-top: 2vw;
+    }
+
+    .mainItemTitle > span {
+        font-size: 1.5rem;
+        margin-left: 3vw;
+        margin-top: 0;
+    }
+
+    .mainItemTitle > div {
+        width: 23vw;
+        height: 1vw;
+        background-color: transparent;
+        border-bottom: 2px solid #000;
+        margin-left: 3vw;
+        margin-top: 0;
+    }
+
+    .mainItemContent {
+        display: flex;
+    }
+
+    .mainItemProduct {
+        width: 100%;
+        height: auto;
+        margin-top: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mainItemProduct div img {
+        width: 12em;
+        height: 9em;
+        margin-bottom: 1vw;
+    }
+
+    .mainItemContain {
+        width: 100%;
+        height: 76vh;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .mainItemContain .containTitle {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: 4vw;
+    }
+
+    .mainItemContain .containTitle span {
+        margin-left: 3vw;
+    }
+
+    .mainItemContain .containLine {
+        width: 100%;
+        height: 0.1rem;
+        background-color: transparent;
+        border-bottom: 2px solid #000;
+        margin-left: 0;
+    }
+
+    .mainItemContainList {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .mainItemContainList .containTop {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+    }
+
+    .mainItemContainList .containItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 44%;
+        height: auto;
+    }
+
+    .mainItemContainList .containItem span {
+        font-size: 1rem;
+        margin-top: 2vw
+    }
+
+    .mainItemContainList .containItem span:nth-child(1) {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-top: 6vw;
+    }
+
+    .mainItemContainList .containFoot {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-top: 5vw;
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 3%;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+}
+
+
+

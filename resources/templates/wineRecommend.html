@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title>红酒推荐</title>
+    <link type="text/css" rel="stylesheet" href="/css/wineRecommend.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/wineRecommend.js"></script>
+</head>
+<body style="display: flex;flex-direction: column;overflow-x:hidden">
+<!--顶部组件-->
+<div class="topMain">
+    <div class="topLeft">
+        <span style="">广州众算税务师事务所有限公司</span>
+    </div>
+
+    <div class="topRight">
+        <img style="" src="/img/shenji.jpg"/>
+        <img style="" src="/img/QRCode/hongjiuQC.jpg"/>
+    </div>
+</div>
+
+
+<!--内容控件-->
+<div class="mainContainer">
+
+
+    <div class="mainTitle" style="">
+        <span style="">红酒展示</span>
+        <div style=""></div>
+    </div>
+    <!--分类1-->
+    <div class="mainItem">
+        <div class="sectionTitle" style="">推荐一：广州市场畅销，经济适用于商务接待</div>
+        <div class="mainItemContent">
+            <div class="elementMain">
+                <div>
+                    <span style="">酒名：金雄干红葡萄酒</span>
+                    <span style="">Moss Roxx Ancient vine Zinfandel 2014</span>
+                </div>
+                <div>
+                    <img class="imgStyle" onclick="navToJinxiong()" src="/img/commodity/jinxiong_zhengfan.jpg"/>
+                    <span class="price" style="">含税价:423元</span>
+                    <span>不含税价:400元</span>
+                </div>
+            </div>
+
+            <div class="elementMain">
+                <div>
+                    <span style="">酒名：加州迷金仙芬黛干红葡萄酒</span>
+                    <span style="">Into Zin Zinfandel</span>
+                </div>
+                <div>
+                    <img class="imgStyle" onclick="navToMijin()" src="/img/commodity/mijin_zhengfan.jpg"/>
+                    <span class="price" style="">含税价:212元</span>
+                    <span>不含税价:200元</span>
+                </div>
+            </div>
+
+            <div class="elementMain">
+                <div>
+                    <span style="">酒名：加州三妹赤霞珠干红葡萄酒</span>
+                    <span style="">3 Girls Cabernet Sauvignon</span>
+                </div>
+                <div>
+                    <img onclick="navToSanmei()" class="imgStyle" src="/img/commodity/sanmei_zhengfan.jpg"/>
+                    <span style="">含税价:223元</span>
+                    <span>不含税价:210元</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--分类2-->
+    <div class="mainItem">
+        <div class="sectionTitle" style="">推荐二：推广阶段高性价比，特别适合家庭消费</div>
+        <div class="mainItemContent">
+            <div class="elementMain">
+                <div>
+                    <span style="">酒名：法国力关轩干红葡萄酒</span>
+                    <span style="">Chateau Les Grands Chenes</span>
+                </div>
+                <div>
+                    <img onclick="navToLiguanxuan()" class="imgStyle" src="/img/commodity/liguanxuan_zhengfan.jpg"/>
+                    <span class="price" style="">含税价:265元</span>
+                    <span>不含税价:250元</span>
+                </div>
+            </div>
+
+            <div class="elementMain">
+                <div>
+                    <span style="">酒名：斯丹蔓萝老树仙芬黛红葡萄酒</span>
+                    <span style="">STAMA Old Vine Zinfandel</span>
+                </div>
+                <div>
+                    <img onclick="navToSdmlWine()" class="imgStyle" src="/img/commodity/sdml_zhengfan.jpg"/>
+                    <span class="price" style="">含税价:170元</span>
+                    <span>不含税价:160元</span>
+                </div>
+            </div>
+
+            <div class="elementMain">
+                <div>
+                    <span style="">酒名：是谷庭特级珍藏</span>
+                    <span style="">CASA DI SUI Superior Cabernet Sauvignon 2009</span>
+                </div>
+                <div>
+                    <img onclick="navToSgtcWine()" class="imgStyle" src="/img/commodity/sgtc_zhengfan.jpg"/>
+                    <span class="price" style="">含税价:93元</span>
+                    <span>不含税价:88元</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--分类3-->
+    <div class="mainItem">
+        <div class="sectionTitle" style="">推荐三：特别适年会、聚会、聚餐、礼品</div>
+        <div class="mainItemContent">
+            <div class="elementMain">
+              <div>
+                  <span style="">酒名：罗莎里奥红酒</span>
+                  <span>Rosario</span>
+              </div>
+               <div>
+                   <img onclick="navToLsla()" class="imgStyle" src="/img/commodity/lsla_zhengfan.jpg"/>
+                   <span class="price" style="">含税价:62元</span>
+                   <span>不含税价:58元</span>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <!--分类4-->
+    <div class="mainItem">
+        <div class="sectionTitle" style="">推荐四：精品红酒杯</div>
+        <div class="mainItemContent">
+            <div class="elementMain">
+                <div>
+                    <span>品名：意德丽塔（IDELITA）红酒杯</span>
+                </div>
+                <div>
+                    <img onclick="navToJiubei()" class="imgStyle2" src="/img/commodity/jiubei_zf.jpg"/>
+                    <span class="price" style="">含税价:62元</span>
+                    <span>不含税价:58元</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--底部控件-->
+<div class="footer">
+    <span>备案/许可证编号：粤ICP备14096990号</span>
+</div>
+
+</body>
+</html>
